@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+    <head><title>hosptial form</title>
+    <style>
+        .top{
+            display:flex;
+            justify-content: space-around;
+            background-color: white;
+            height:48px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+        .top h4{
+            position:absolute;
+            top:-15px;
+            left:110px;
+            font-size:20px;
+        }
+        .top p{
+            position:absolute;
+            top:20px;
+            left:110px;
+            font-size:15px;
+        }
+
+        .topbut{
+            position: absolute;
+            right:70px;
+            top:15px;
+            word-spacing:40px;
+            
+        }
+        .topbut button{
+            border:none;
+            padding:10px;
+            color:black;
+            background-color: white;
+            font-size:15px;
+            cursor:pointer;
+        }
+        .topbut button:hover{
+            transform: scale(1.1);
+            color: rgb(5, 182, 241);
+        }
+        .top img{
+            width:60px;
+            height:40px;
+            position:absolute;
+            left:50px;
+            top:15px;
+        }
+        .span button{
+    background-color: #2864d7;
+    color: white;
+    border-radius: 5px;
+    padding:7px;
+}
+        .main{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: absolute;
+            
+            background-color:rgb(216, 240, 249);
+            height:780px;
+            width:1240px;
+            top:58px;
+           
+        }
+        .main p1{
+            position: absolute;
+            top:55px;
+            font-size:20px;
+
+        }
+      .main h3{
+        font-size:39px;
+        position: absolute;
+            top:-30px;
+      }
+      .info{
+        display:flex;
+        justify-content: center;
+        background-color:white;
+        position:absolute;
+        top:150px;
+        flex-direction: row;
+        gap:100px;
+        padding:30px;
+        padding-bottom: 60px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        width:860px;
+        height:300px;
+        align-items:center;
+        
+      }
+      .personal input{
+        width:200px;
+        
+      }
+      .personal p2{
+        font-size:25px;
+        font-weight: bold;
+       position: absolute;
+       left:140px;
+        top:25px;
+        color:navy;
+        
+      }
+      .personal img{
+        width:20px;
+        height:20px;
+        position:absolute;
+        left:110px;
+      top:30px;}
+      
+ .details p3{
+        font-size:25px;
+        font-weight: bold;
+       position: absolute;
+       right:150px;
+       top:25px;
+        color:navy;
+      }
+      .details img{
+        width:33px;
+        height:33px;
+        position:absolute;
+       left:518px;
+       top:23px;}
+
+       .details form1{
+       width:100px;
+    position: relative;
+    top: 60px;
+}
+.boo{
+    position:absolute;
+    top:750px;
+    border:none;
+    padding:20px;
+  background-color: #2864d7;
+    color: white;
+    border-radius: 5px;
+    cursor:pointer;
+}
+.boo:hover{
+    transform:scale(1.1);
+}
+.additional{
+position:absolute;
+bottom:-200px;
+left:0px;
+ padding:30px;
+        padding-bottom: 60px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        width:860px;
+        height:100px;
+        background-color: white;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:row;
+        gap:100px;
+}
+.additional p9{
+    position: absolute;
+    top:20px;
+    font-size:25px;
+        font-weight: bold;
+        color:navy;
+}
+.additional textarea{
+    position:absolute;
+    left:250px;
+    top:90px;
+}
+     .additional p11{
+    position:absolute;
+    left:50px;
+    top:90px;
+}  
+.additional p12{
+    position: absolute;
+     left:550px;
+    top:90px;
+}
+.additional button{
+     position: absolute;
+     left:660px;
+    top:90px;
+
+}
+.additional p13{
+     position: absolute;
+     left:630px;
+    top:119px;
+    font-size:12px;
+    font-weight:555;
+
+}
+.paper1,.paper2 {
+    color: blue;
+}
+.additional p14{
+    position:absolute;
+    left:80px;
+    top:150px;
+}
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    position:absolute;
+    left:50px;
+    top:148px;
+}
+
+.additional img {
+    width: 28px;
+    height: 25px;
+    position: absolute;
+    top: 22px;
+    left: 300px;
+}
+.lastt{
+    display:flex;
+    justify-content: flex-start;
+    gap:10px;
+    background-color: #2864d7;
+    height:40px;
+    width:1240px;
+    position:absolute;
+    bottom:-280px;
+}
+.lastt p15{
+    position: absolute;
+    left:150px;
+    top:10px;
+}
+.lastt p16{
+    position: absolute;
+    right:350px;
+    top:10px;
+}
+.lastt .fb{
+    width:20px;
+    height:20px;
+    position:absolute;
+    left:900px;
+    top:10px;
+}
+.lastt .insta{
+    width:20px;
+    height:20px;
+    position:absolute;
+    left:930px;
+    top:10px;
+}
+.lastt .twitt{
+    width:20px;
+    height:20px;
+    position:absolute;
+    left:960px;
+    top:10px;
+}
+.lastt .yt{
+    width:20px;
+    height:20px;
+    position:absolute;
+    left:990px;
+    top:10px;
+}
+
+
+    </style></head>
+    <body>
+        <div class="top">
+            <img src="med.jpeg"></img>
+            <h4>MediCare+</h4>
+            <p>Your health,Our Priority</p>
+            <div class="topbut">
+                <button>Home</button>
+                <button>Doctors</button>
+                <button>Services</button>
+                 <button>About Us</button>
+                 <button>Contact Us</button>
+                 <span class="span"> <button>Appointment History</button></span>
+
+            </div>
+            <div class="main">
+                 <h3>Book an Appointment</h3><br><br>
+            <p1>Fill the form to schedule a visit</p1>
+            </div>
+
+
+           <div class="info">
+            <div class="personal">
+                <img src="person.jpeg"></img>
+            <p2>Patient Information</p2><br><br><br>
+            <form>
+                Full Name:
+                <input type="text" placeholder="Enter your full name"><br><br>
+                Email:
+                <input type="email" placeholder="Enter your email"><br><br>
+                Phone Number:
+                <input type="number" placeholder="Enter your phone number"><br><br>
+                Date:
+                <input type="date" placeholder="dd-mm-yy"><br><br>
+                Gender:
+                 <select>
+                    
+                     <option selected disabled>Select your gender</option>
+                      <option>Male</option>
+                      <option>Female</option>
+                       <option>Others</option>
+                     
+                </select>
+<br><br>
+                Blood Group:
+                <select>
+                     <option selected disabled>Select your blood group</option>
+                     <option>A+ (A POSITIVE)</option>
+                      <option>A- (A NEGATIVE)</option>
+                       <option>B+ (B POSITIVE)</option>
+                      <option>B- (B NEGATIVE)</option>
+                       <option>O+ (0 POSITIVE)</option>
+                      <option>O- (O NEGATIVE)</option>
+                       <option>AB+ (AB POSITIVE)</option>
+                      <option>AB- (AB NEGATIVE)</option>
+                </select>
+            </form>
+            </div>
+            <div class="details">
+             <img src="calendar.jpeg"></img>
+              <p3>Appointment Details</p3>
+            <form1>
+                
+                Appointment Number:
+                <input type="text" placeholder="Enter your appointment number">
+               <br><br>
+                Department:
+                <select>
+            
+                    <option selected disabled>Select your department</option>
+                     <option>Cardiology</option>
+                      <option>Neurology</option>
+                       <option>Orthopedics</option>
+                      <option>Dermatology</option>
+                       <option>Pediatrics</option>
+                      <option>Gynecology</option>
+                       <option>General Medicine</option>
+                      <option>Dentistry</option>
+                      <option>ENT</option>
+                      <option>Ophthalmology</option>
+                </select><br><br>
+                Doctor:
+<select>
+    <option selected disabled>Select Doctor</option>
+    <option>Dr. Ananya Sharma - Cardiologist</option>
+    <option>Dr. Rahul Mehta - Neurologist</option>
+    <option>Dr. Priya Nair - Dermatologist</option>
+    <option>Dr. Arjun Rao - Orthopedic</option>
+    <option>Dr. Sneha Iyer - Pediatrician</option>
+    <option>Dr. Kiran Kumar - General Physician</option>
+</select><br><br>
+Appointment Date:
+                <input type="date" placeholder="dd-mm-yy"><br><br>
+
+Appointment Time:
+                <input type="time" placeholder="hh-mm"><br><br>
+                Visit Type:
+                <select>
+    <option selected disabled>Select Visit Type</option>
+    <option>In-Person Visit</option>
+    <option>Video Consultation</option>
+    <option>Follow-up Visit</option>
+    <option>Emergency Visit</option>
+</select><br><br>
+Symptoms:
+<textarea maxlength="500" placeholder="Breifly describe your symptoms."></textarea><br><br>
+
+                
+
+
+            </form1>
+           </div>
+            
+             <div class="additional">
+                <img src="form11.jpeg">
+                <p9>Additional Information:</p9><br><br><br>
+                <p11>Any previous medical history?</p11>
+                <textarea maxlength="500" placeholder="Breifly describe your medical history."></textarea><br><br>
+                <p12>Upload reports:</p12>
+                <button>Choose a file</button>
+                <p13>PDF, JPG or PNG ( Max size: 5MB )</p13>
+                <input type="checkbox">
+
+                <p14>I agree to<span class="paper1">Terms & Conditions</span> and <span class="paper2">Privacy Policy.</span></p14>
+             </div> </div>
+       <button class="boo">Book an Appointment</button>
+
+       <div class="lastt">
+        <p15>2026 MediCare+. All Rights Reserved.</p15>
+         <p16>Follow us on:</p16>
+      
+           
+             <img class="insta" src="insta.jpeg">
+              <img class="fb" src="fb.jpeg"></img>
+         <img class="twitt" src="twitt.jpeg"></img>
+           <img class="yt" src="yt.jpeg"></img>
+            
+       
+       </div>
+    </body>
+</html>
