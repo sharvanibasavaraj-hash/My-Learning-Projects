@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+    <head><title>food version#2</title>
+    <style>
+        .first{
+            display:flex;
+            justify-content: center;
+          grid-area: 10px;
+            color:black;
+            background-color:rgb(248, 244, 244);
+            height:50px;
+            margin-bottom: 50px;
+            font-size:20px;
+            gap:100px;
+            width:1300px;
+        }
+        .first h4{
+            font-size:23px;
+             position:absolute;
+             top:-18px;
+            left:97px;
+        }
+        .first p{
+            font-size:13px;
+            position:absolute;
+            top:28px;
+            left:95px;
+        }
+        .first img{
+            position:absolute;
+            left:58px;
+            width:30px;
+            height:30px;
+            top:20px;
+            background-color:  rgb(248, 244, 244);
+        }
+        .but{
+            display:flex;
+            justify-content: center;
+            position: absolute;
+            left:450px;
+            gap:70px;
+            top:28px;
+           
+        }
+        .but button{
+             border:none;
+            font-size: 15px;
+            background-color: rgb(248, 244, 244);
+            font-weight: bold;
+            cursor:pointer;
+        }
+       .but button:hover{
+        transform: scale(1.1);
+        color:orange;
+       }
+       .main{
+        display:flex;
+        flex-direction: column;
+       position:absolute;
+        top:57px;
+        width:1300px;
+        background-color:rgb(244, 225, 225);
+        height:300px;
+        left:10px;
+        color:black;
+       }
+       .butt{
+        display:flex;
+        justify-content: center;
+        width:320px;
+        height:30px;
+        gap:10px;
+        position:absolute;
+        top: 210px;
+        left:0px;
+        cursor:pointer;
+       }
+       .butt:hover{
+        transform: scale(1.1);
+       }
+       .main h2{
+        position:absolute;
+        left:30px;
+        font-size:40px;
+        color:rgb(8, 8, 8);
+        top:20px;
+       }
+       .main h5{
+        position:absolute;
+        left:30px;
+        top:130px;
+        font-size: 16px;
+        color:rgb(8, 8, 8);
+       }
+       .butt button{
+    color:rgb(55, 9, 9);
+    background-color: orange;
+    border: 0px solid white;
+       border-radius: 10px;
+       cursor: pointer;
+       }
+       span{
+        color:orange;
+       }
+       .main img{
+         width:350px;
+        height:250px;
+       
+        position:absolute;
+        right:150px;
+        top:20px;
+        border-radius: 10px;;
+       }
+       .order{
+        display: flex;
+        justify-content: center;
+        gap:150px;
+margin-top: 330px;
+border:none;
+ padding:30px;
+        padding-top: 0px;
+        padding-bottom:40px;
+   }
+    .two h7,h8,h9,h10{
+        font-weight:bold;
+        font-size:20px;
+        margin-top: auto;
+    }
+    .order p{
+        font-size:14px;
+        position: absolute;
+        margin-top:5px;
+    }
+    .one img{
+        width:60px;
+        height:60px;
+        position:absolute;
+        left:90px;
+        margin-top:0px;
+      }
+    .two img{
+        width:40px;
+        height:40px;
+        position:absolute;
+        left:410px;
+        margin-top:7px;
+    }
+    .three img{
+        width:80px;
+        height:70px;
+        position:absolute;
+        left:620px;
+        margin-top:-7px;
+    }
+    .four img{
+        width:50px;
+        height:50px;
+        position:absolute;
+        left:940px;
+        margin-top:10px;
+    }
+ .burger{
+        margin-top:40px;
+        position: absolute;
+        left:50px;
+    }
+    .burger img{
+        width:250px;
+        height:180px;
+         position: absolute;
+     left:0px;
+        top:-2px ;
+        border-radius: 10px;}
+ .burger button{
+        width:250px;
+        height:300px;
+         position: absolute;
+         left:0px;
+         border-radius: 10px;
+         cursor:pointer;
+         background-color: white;
+         box-shadow:0px 4px 5px gray;
+         border:none;
+         border-radius:10px;
+    }
+    .burger button:hover{
+        transform: scale(1.1);
+    }
+    .burger p{
+       position:absolute;
+        top:170px;
+        font-size:14px;
+         font-weight: bold;
+         left:10px;
+         }
+    .burger p2{
+       position:absolute;
+        top:200px;
+        font-size:14px;
+         font-weight: bold;
+         left:10px;
+          }
+    .burger span1{
+        position:absolute;
+        top:0px;
+        left:190px;
+        font-weight: bold;
+        color:orange;
+}
+    .burger span2{
+        color:green;
+        }
+    .burger span3{
+        position:absolute;
+        top:240px;
+        left:100px;
+         white-space: nowrap;
+         border:1px solid black;
+         font-size:14px;
+   font-weight: bold;
+   padding:8px;
+   background-color: rgb(250, 229, 229);
+   border:none;
+   border-radius:10px;
+    }
+ .white{
+        margin-top:40px;
+        position: absolute;
+        left:350px;
+       }
+    .white img{
+        width:250px;
+        height:180px;
+         position: absolute;
+     left:0px;
+        top:-2px ;
+        border-radius: 10px;}
+ .white button{
+        width:250px;
+        height:300px;
+         position: absolute;
+         left:0px;
+         border-radius: 10px;
+         cursor:pointer;
+         background-color: white;
+         box-shadow:0px 4px 5px gray;
+         border:none;
+         border-radius:10px;
+    }
+    .white button:hover{
+        transform: scale(1.1);
+    }
+    .white p{
+       position:absolute;
+        top:170px;
+        font-size:14px;
+         font-weight: bold;
+         left:10px;
+    }
+     .white p1{
+       position:absolute;
+        top:200px;
+        font-size:14px;
+         font-weight: bold;
+         left:10px;
+         }
+    .white span4{
+        position:absolute;
+        top:0px;
+        left:190px;
+        font-weight: bold;
+        color:orange;
+}
+    .white span5{
+        color:green;
+         position:static;
+    display:inline;
+         }
+    .white span6{
+        position:absolute;
+        top:240px;
+        left:100px;
+         white-space: nowrap;
+         border:1px solid black;
+         font-size:14px;
+   font-weight: bold;
+   padding:8px;
+   background-color: rgb(250, 229, 229);
+   border:none;
+   border-radius:10px;
+    }
+    .pizza{
+        margin-top:0px;
+        position: absolute;
+        left:300px;
+         }
+    .pizza img{
+        width:250px;
+        height:180px;
+         position: absolute;
+     left:0px;
+        top:-2px ;
+        border-radius: 10px;}
+.pizza button{
+        width:250px;
+        height:300px;
+         position: absolute;
+         left:0px;
+         border-radius: 10px;
+         cursor:pointer;
+         background-color: white;
+         box-shadow:0px 4px 5px gray;
+         border:none;
+         border-radius:10px;
+    }
+    .pizza button:hover{
+        transform: scale(1.1);
+    }
+    .pizza p{
+       position:absolute;
+        top:170px;
+        font-size:14px;
+         font-weight: bold;
+         left:10px;
+          }
+    .pizza p3{
+       position:absolute;
+        top:200px;
+        font-size:14px;
+         font-weight: bold;
+         left:10px;
+          }
+    .pizza span7{
+        position:absolute;
+        top:0px;
+        left:190px;
+        font-weight: bold;
+        color:orange;
+}
+    .pizza span8{
+        color:green;
+        }
+    .pizza span9{
+        position:absolute;
+        top:240px;
+        left:100px;
+         white-space: nowrap;
+         border:1px solid black;
+         font-size:14px;
+   font-weight: bold;
+   padding:8px;
+   background-color: rgb(250, 229, 229);
+   border:none;
+   border-radius:10px;
+    }
+.choco{
+        margin-top:0px;
+        position: absolute;
+        left:300px;
+        }
+    .choco img{
+        width:250px;
+        height:180px;
+         position: absolute;
+     left:0px;
+        top:-2px ;
+        border-radius: 10px;}
+.choco button{
+        width:250px;
+        height:300px;
+         position: absolute;
+         left:0px;
+         border-radius: 10px;
+         cursor:pointer;
+         background-color: white;
+         box-shadow:0px 4px 5px gray;
+         border:none;
+         border-radius:10px;
+    }
+    .choco button:hover{
+        transform: scale(1.1);
+    }
+    .choco p{
+       position:absolute;
+        top:170px;
+        font-size:14px;
+         font-weight: bold;
+         left:10px;
+         }
+    .choco p4{
+       position:absolute;
+        top:200px;
+        font-size:14px;
+         font-weight: bold;
+         left:10px;
+         }
+    .choco span10{
+        position:absolute;
+        top:0px;
+        left:190px;
+        font-weight: bold;
+        color:orange;
+}
+    .choco span11{
+        color:green;
+           }
+    .choco span12{
+        position:absolute;
+        top:240px;
+        left:100px;
+         white-space: nowrap;
+         border:1px solid black;
+         font-size:14px;
+   font-weight: bold;
+   padding:8px;
+   background-color: rgb(250, 229, 229);
+   border:none;
+   border-radius:10px;
+    }
+ .last{
+    background-color: rgb(30, 20, 16);
+width:1050px;
+    padding: 120px;
+    position:absolute;
+    top:320px;
+    left:-930px;
+ }
+.last img{
+    width:30px;
+    height:30px;
+         position:absolute;
+            left:25px;
+            width:25px;
+            height:25px;
+            top:30px;
+            background-color: rgb(30, 20, 16);
+}
+.last h20{
+    color:white;
+    position: absolute;
+    left: 55px;
+    top:25px;
+    font-size:23px;
+}
+.last p5{
+    position:absolute;
+    left: 55px;
+    top:55px;
+    color:white;
+    font-size: 13px;
+}
+.last .insta{
+    width:20px;
+    height:20px;
+    top:100px;
+left:50px;
+}
+.last .fb{
+    width:20px;
+    height:20px;
+    top:100px;
+left:75px;
+}
+.last .twitt{
+    width:20px;
+    height:20px;
+    top:100px;
+left:100px;
+}
+.last .yt{
+    width:20px;
+    height:20px;
+    top:100px;
+left:125px;
+}
+.second{
+    color:white;
+    position: absolute;
+    right:550px;
+    top:350px;
+   
+}
+.third{
+    color:white;
+    position: absolute;
+    right:350px;
+    top:350px;
+   
+}
+.fourth{
+    color:white;
+    position: absolute;
+    right:100px;
+    top:350px;
+   
+}
+.fifth{
+    color:white;
+    position: absolute;
+    left:0px;
+    top:350px;
+   white-space: nowrap;
+}
+.fifth button{
+    width:80px;
+    height:30px;
+    position:absolute;
+    top:130px;
+    left:20px;
+    background-color: orange;
+    color:white;
+    box-shadow: 0px 4px 5px gray;
+    cursor:pointer;
+}
+.fifth button:hover{
+    transform: scale(1.1);
+}
+.fifth input{
+    box-sizing: border-box;
+}
+    </style></head>
+    <body>
+        <div class="first"> <img src="cutlery.jpeg"></img> <h4>Flavoria</h4>
+        <p>Good Food,Great Mood</p>
+        <div class="but"><button>Home</button>
+        <button>About Us</button>
+        <button>Services</button>
+        <button>Gallery</button>
+     <button>Contact</button>
+    <button>Book a table</button>
+</div>
+        </div>
+        <div class="main">
+             <h2>Delicious Food,<br>Unforgettable <span>Experience!</span></h2>
+        <h5>Savor the best meals made with fresh ingredients,<br>love the passion.Every bite tells a story.</h5>
+        <img src="pasta.jpeg"></img>
+        <div class="butt">      <button>Explore Menu ↗</button>
+         <button>Book a table 🗓️</button></div>
+ </div>
+        <div class="order">
+            <div class="one">
+                <img src="leaf2.jpeg"></img>
+                <h10>Fresh Ingredients<br></h10>
+                <p>We use only the freshest<br>and highest quality ingredients.</p>
+            </div>
+            <div class="two">
+                <img src="chef.jpeg"></img>
+                <h7>Expert Chef</h7>
+                <p>Our chefs bring creativity<br>and passion to every dish.</p>
+            </div>
+             <div class="three">
+                  <img src="LOVE2.jpeg"></img>
+                <h8>Made with Love</h8>
+                <p>Every meal is prepared<br>with love and care.</p>
+            </div>
+             <div class="four">
+                  <img src="clock.jpeg"></img>
+                <h9>Fast delivery</h9>
+                <p>Enjoy your favorite food<br>quickly at your doorstep.</p>
+            </div>
+        </div>
+       <div class="burger"><button>
+            <img src="burger.jpeg"></img><br><br><br><br><br><br><br><br><br>
+           <p>Classic Burger<span1>₹199</span1><br></p><p2><span2>★</span2>4.5(120)</p2>
+            <span3><buuton>Add to cart🛒</button></span3>
+   </button>
+</div>
+        <div class="white"><button>
+            <img src="white.jpeg"></img><br><br><br><br><br><br><br><br><br>
+           <p>White Sauce Pasta<span4>₹249</span4><br></p><p1><span5>★</span5>4.7(98)</p1>
+            <span6><buuton>Add to cart🛒</button></span6>
+   </button>
+ <div class="pizza"><button>
+            <img src="pizza.jpeg"></img><br><br><br><br><br><br><br><br><br>
+           <p>Veggie Pizza<span7>₹299</span7><br></p><p3><span8>★</span8>4.6(150)</p3>
+            <span9><buuton>Add to cart🛒</button></span9>
+   </button>
+ <div class="choco"><button>
+            <img src="choco.jpeg"></img><br><br><br><br><br><br><br><br><br>
+           <p>Choco Lava Cake<span10>₹149</span10><br></p><p4><span11>★</span11>4.8(80)</p4>
+            <span12><buuton>Add to cart🛒</button></span12>
+   </button>
+<div class="last">
+     <img src="cutlery.jpeg"></img> <h20>Flavoria</h20>
+        <p5>Good food is the foundation<br>of happiness.</p5>
+       <img class="insta" src="insta.jpeg"></img>
+                <img class="fb" src="fb.jpeg"></img>
+         <img class="twitt" src="twitt.jpeg"></img>
+           <img class="yt" src="yt.jpeg"></img>
+        </div>
+        <div class="second">
+            <p6>Links</p6>
+            <br><br>
+            <p7>Home</p7>
+             <p8>Menu</p8>
+            <p9>About Us</p9>
+             <p10>Gallery</p10>
+             <p11>Contact</p11>
+        </div>
+    <div class="third">
+            <p6>Services</p6>
+            <br><br>
+            <p7>Dine-In</p7>
+             <p8>Takeaway</p8>
+            <p9>Delivery</p9>
+             <p10>Catering</p10>
+             <p11>Book a Table</p11>
+        </div>
+        <div class="fourth">
+            <p6>Contact-Us</p6>
+            <br><br>
+            <p7>📞+919876543210</p7><br>
+             <p8>✉️info@gmail.com</p8>
+             <p9>📍123,Food Street,Banglore,India</p9>
+        </div>
+        <div class="fifth">
+            <p5>Newsletter</p5><br><br>
+            <p6>Subscribe to get latest updates<br>and offers.</p6><br><br>
+           Email:
+           <input type="email">
+           <button>Subscribe</button>
+        </div>
+    </body>
+</html>
