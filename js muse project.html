@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Muse
+        </title>
+        <style>
+            .plz{
+                display:none;
+            }
+            .plz1{
+                display:none;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <h1>MUSE - CATCH THE IDEA BEFORE IT DISAPPEARS!!</h1>
+        <h3>Idea:</h3>
+        <input type="text" id="idea">
+        <p1 id="plz" class="plz">plz type ur idea and then click save</p1>
+        <h4>Category:</h4>
+         <p2 id="plz1" class="plz1">plz select ur category and then click save</p2>
+        <select id="select">
+             <option value="" selected disabled>Select your category</option>
+            <option>AI Projects</option>
+            <option>Backend</option>
+            <option>Fun</option>
+        </select>
+        <button id="bo">Save Idea</button>
+        <div id="yourideas"> <p3 >Your Ideas</p3></div>
+     
+        Search:
+       <input type="text" id="search">
+       <p id="results"></p>
+       
+       <script>
+            let idea=document.getElementById("idea");
+            let select=document.getElementById("select");
+            let bo=document.getElementById("bo");
+            let ideas=[];
+            let cat=[];
+           
+            let yourideas=document.getElementById("yourideas");
+            bo.addEventListener("click",function(event){
+                 let your=document.createElement("p");
+            let your1=document.createElement("p");
+              let edit=document.createElement("button");
+                let del=document.createElement("button");
+                if(idea.value=="")
+            {
+                plz.style.display="block";
+            }
+            if(select.value=="")
+            {
+                plz1.style.display="block";
+            }
+            
+               else
+{
+    ideas.push(idea.value);
+    cat.push(select.value);
+
+    your.textContent = "Idea: " + idea.value;
+    your1.textContent = "Category: " + select.value;
+
+    edit.textContent = "Edit";
+    del.textContent = "Delete";
+
+    yourideas.append(your);
+    yourideas.append(your1);
+    yourideas.append(edit);
+    yourideas.append(del);
+
+    let index = ideas.length - 1;
+
+    edit.addEventListener("click", function()
+    {
+        idea.value = ideas[index];
+        select.value = cat[index];
+
+        ideas[index] = idea.value;
+        cat[index] = select.value;
+    });
+
+    del.addEventListener("click", function()
+    {
+        ideas.splice(index, 1);
+        cat.splice(index, 1);
+
+        your.remove();
+        your1.remove();
+        edit.remove();
+        del.remove();
+    });
+}
+            });
+            
+          
+            search.addEventListener("input",function(event){
+                  let search=document.getElementById("search");
+             let results=document.getElementById("results");
+             results.innerHTML="";
+                 for(let i = 0; i < ideas.length; i++)
+    {
+      
+        if(ideas[i].includes(search.value) ||cat[i].includes(search.value) )
+        {
+            let p=document.createElement("p");
+        let p1=document.createElement("p");
+
+        p.textContent= "Idea: "+ideas[i] ;
+          p1.textContent= "Category: "+cat[i];
+
+          results.append(p);
+          results.append(p1);
+    }}
+
+        
+    
+            });
+            
+        </script>
+    </body>
+</html>
